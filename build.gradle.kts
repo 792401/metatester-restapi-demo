@@ -10,12 +10,13 @@ repositories {
         name = "GitHubPackages"
         url = uri("https://maven.pkg.github.com/792401/metatester")
         credentials {
-            username = System.getenv("GITHUB_USERNAME")
-            password = System.getenv("GITHUB_TOKEN")
+            username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_USERNAME");
+            password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN");
+
         }
-    }
-    mavenCentral()
+        mavenCentral()
 //    mavenLocal()
+    }
 }
 
 dependencies {
@@ -23,7 +24,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation("io.rest-assured:rest-assured:5.3.0")
     implementation("io.rest-assured:json-path:5.3.0")
-    implementation("io.metatester:metatester:1.0.0-dev-57ccbbb")
+    implementation("io.metatester:metatester:1.0.0-dev-3cf0526")
 }
 
 tasks.test {
