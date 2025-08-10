@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.given;
 @Execution(ExecutionMode.CONCURRENT)
 public class ECommerceApiTest {
 
-    private static final String BEARER_TOKEN = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9";
+    private static final String BEARER_TOKEN = "Bearer 123";
 
     @BeforeAll
     public static void setup() {

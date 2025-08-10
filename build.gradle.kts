@@ -15,7 +15,7 @@ repositories {
 
         }
         mavenCentral()
-//    mavenLocal()
+    mavenLocal()
     }
 }
 
@@ -24,7 +24,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation("io.rest-assured:rest-assured:5.3.0")
     implementation("io.rest-assured:json-path:5.3.0")
-    implementation("io.metatester:metatester:1.0.0-dev-3cf0526")
+    implementation("io.metatester:metatester:1.0.0-dev-6c5dec1")
 }
 
 tasks.test {

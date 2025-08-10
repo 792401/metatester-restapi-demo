@@ -1,0 +1,18 @@
+# MetaTester Configuration Example
+# Copy this file to metatester.properties and configure your values
+
+# API Configuration - Required
+metatester.api.key=mt_proj_your_api_key_here
+metatester.project.id=your-project-uuid-here
+metatester.api.url=http://localhost:8080
+
+# Alternative: Use environment variables or system properties
+# Environment Variables:
+#   METATESTER_API_KEY=mt_proj_your_api_key_here
+#   METATESTER_PROJECT_ID=your-project-uuid-here
+#   METATESTER_API_URL=http://localhost:8080
+#
+# System Properties:
+#   -Dmetatester.api.key=mt_proj_your_api_key_here
+#   -Dmetatester.project.id=your-project-uuid-here
+#   -Dmetatester.api.url=http://localhost:8080
